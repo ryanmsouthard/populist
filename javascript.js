@@ -1,5 +1,8 @@
 console.log("OK");
 
+
+
+
 // Create an array to store the new list items the user enters 
 var list = [ ];
 
@@ -11,7 +14,7 @@ newListItem = function () {
 	var results = document.getElementById('newList')
 	results.innerHTML += "<li id='added-list-item'>" 
 	+ newLiValue 
-	+ '<input type="checkbox" class="gotit"><span class="glyphicon glyphicon-remove" onclick="return deleteListItem();" aria-hidden="true" id="remove"></span></li>' 
+	+ '<input type="checkbox" class="gotit"><span class="glyphicon glyphicon-remove" onclick="return deleteListItem();" aria-hidden="true" id="remove"></span><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></li>' 
 	//	Clear the input field for the next entry
 	$('#new-list-item-1').val('');
 };
@@ -24,8 +27,6 @@ document.getElementById('new-list-item-1').addEventListener('keypress', function
 	}
 });
 
-
-
 // Add a delete function that triggers only when there's at least one item in the list array 
 
 function deleteListItem() {
@@ -35,12 +36,6 @@ function deleteListItem() {
 	return false;
 }
 
-
-	
-
-
-
-
 //  COLLAPSIBLE DIVS IN CART
 
 $( "#plus-toggle" ).click(function() {
@@ -48,21 +43,4 @@ $( "#plus-toggle" ).click(function() {
 });
 
 
- 
 
-
-
-// LIST TITLE
-
-
-// Add the title of the list to the element w/ID "new-list-title"
-
-// Remove the input field
-
-// Add an edit icon to the saved title 
-
-// Open the input field again when the user clicks the edit icon
-
-// Remove the html element 
-
-// Overwrite 

@@ -24,37 +24,51 @@
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 
-
 <body class="home">
 
-<div class="iphone col-lg-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">
-    <div class="container-fluid">
-        <div class="col-xs-12" id="frame">
 <!--HEADER-->
             <div id="header" class="col-xs-12">
-                <div id="header-left" class="col-xs-2">
-                    <div class="dropdown">
+                <div id="header-left" class="col-xs-2 col-sm-5">
+                    <div class="dropdown-hamburger">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Your profile</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">Sign out</a></li>
+                        <ul class="dropdown-menu" id="dropdown-hamburger">
+                            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="mylists.html"><i class="fa fa-list" aria-hidden="true"></i>Your lists</a></li>
+                            <li><a href="newlist.html"><i class="fa fa-file-text" aria-hidden="true"></i>New list</a></li>
+                            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Your profile</a></li>
+                            <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Settings</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign out</a></li>
                         </ul>
                     </div><!--dropdown-->
+                    <h2>Populist</h2>
                 </div><!--header left-->
-                <div id="header-right" class="col-xs-10">
+                <div id="header-right" class="col-xs-10 col-sm-7">
                     <input type="text" class="form-control" placeholder="Search Populists">
                 </div><!--header-right-->
             </div><!--header-->
 <!--END HEADER-->
 
+
 <!-- MAIN CONTENT -->
-            <div class="col-xs-12 new-list-container">
-                <div class="new-list-header">
-                    <input type="text" class="form-control new-list-title-input" placeholder="Give your list a name"></input>
-                </div><!--new list header-->
-                <div class="col-xs-12" id="create-list">
+
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 new-list-container">
+                <div class="col-xs-12">
+                    <p class="heading first-row">New list</p>
+                </div>
+                <div class="col-xs-12" id="new-list-title-buttons">
+                    <div class="col-xs-12 col-sm-7 new-list-header">
+                        <input type="text" class="form-control new-list-title-input" placeholder="Give your list a name"></input>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 new-list-buttons">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                    </div>
+                </div><!--new list title buttons-->
+            </div><!--new list container-->
+
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" id="create-list">
                     <div class="list-input col-xs-12 row">
 
                         <!-- js adds new list items and "edit" glyph here --> 
@@ -63,9 +77,8 @@
 
                         <input type="text" class="form-control" id="new-list-item-1" placeholder="Add list item"></input>
                     </div><!--list-input-->
-                    <button class="copy-button copy-to-new" type="submit" id="save-this-list">Save this list</button>
                 </div>
-            </div><!--new list container-->
+                </div>
 
 
 
@@ -94,12 +107,6 @@
                 </a>
             </div><!--nav footer-->
         </div><!--frame-->
-
-
-
-    </div><!--container fluid-->
-    <div id="home-button" class="col-xs-2 col-xs-offset-5"></div>
-</div><!--iphone-->
 
 <!--jquery and jquery ui-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

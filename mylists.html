@@ -29,146 +29,241 @@
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 
-
 <body class="home">
-
-<div class="iphone col-lg-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">
-    <div class="container-fluid">
-        <div class="col-xs-12" id="frame">
 
 <!--HEADER-->
             <div id="header" class="col-xs-12">
-                <div id="header-left" class="col-xs-2">
-                    <div class="dropdown">
+                <div id="header-left" class="col-xs-2 col-sm-5">
+                    <div class="dropdown-hamburger">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Your profile</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">Sign out</a></li>
+                        <ul class="dropdown-menu" id="dropdown-hamburger">
+                            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="mylists.html"><i class="fa fa-list" aria-hidden="true"></i>Your lists</a></li>
+                            <li><a href="newlist.html"><i class="fa fa-file-text" aria-hidden="true"></i>New list</a></li>
+                            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Your profile</a></li>
+                            <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Settings</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign out</a></li>
                         </ul>
                     </div><!--dropdown-->
+                    <h2>Populist</h2>
                 </div><!--header left-->
-                <div id="header-right" class="col-xs-10">
+                <div id="header-right" class="col-xs-10 col-sm-7 col-md-4">
                     <input type="text" class="form-control" placeholder="Search Populists">
                 </div><!--header-right-->
             </div><!--header-->
+<!--END HEADER-->
 
 
 <!-- MAIN CONTENT -->
-
-            <div class="col-xs-12 row listOfMyLists">
-                <p class="list_title">Your Lists</p>
-                <ul id="my-list-list">
-                    <a href="#">
-                        <li>Vancouver Weekend<div class="visibility-status"><span class="glyphicon glyphicon-eye-open eye" aria-hidden="true"></span><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div></li>
-                    </a>
-                    <a href="#">
-                        <li>Camping<div class="visibility-status"><span class="glyphicon glyphicon-eye-open eye" aria-hidden="true"></span><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div></li>
-                    </a>
-                    <a href="#">
-                        <li>Overnight<div class="visibility-status"><span class="glyphicon glyphicon-eye-close eye" aria-hidden="true"></span><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div></li>
-                    </a>
-                    <a href="#">
-                        <li>Dog - Overnight<div class="visibility-status"><span class="glyphicon glyphicon-eye-open eye" aria-hidden="true"></span><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div></li>
-                    </a>
-                    <a href="#">
-                        <li>San Francisco<div class="visibility-status"><span class="glyphicon glyphicon-eye-open eye" aria-hidden="true"></span><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div></li>
-                    </a>
-                    <a href="#">
-                        <li>Coachella<div class="visibility-status"><span class="glyphicon glyphicon-eye-open eye" aria-hidden="true"></span><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div></li>
-                    </a>
-                    <a href="newlist.html">
-                        <li>Create a new list<div class="visibility-status"><span class="glyphicon glyphicon-plus create-new-plus eye" aria-hidden="true"></span></div></li>
-                    </a>
-                </ul>
-            </div><!--listOfMyLists-->
-
-                        <p class="heading">Populist deals</p>
-            <div class="carousel-row last-row row col-xs-12">
-                <div class="carousel">
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product1.jpg">
-                            <p class="brand">The North Face</p>
-                            <p class="product-name">Sub-zero Sleeping Bag</p>
-                            <p class="price">$179</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product2.jpg">
-                            <p class="brand">MSR</p>
-                            <p class="product-name">2P Backpacking Tent</p>
-                            <p class="price">$279</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product12.jpg">
-                            <p class="brand">Snow Peak</p>
-                            <p class="product-name">Titanium Cookware</p>
-                            <p class="price">$99</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product3.jpg">
-                            <p class="brand">ThermaRest</p>
-                            <p class="product-name">1' Sleeping Pad</p>
-                            <p class="price">$149</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product4.jpg">
-                            <p class="brand">The North Face</p>
-                            <p class="product-name">Sub-zero Sleeping Bag</p>
-                            <p class="price">$179</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product5.jpg">
-                            <p class="brand">The North Face</p>
-                            <p class="product-name">Sub-zero Sleeping Bag</p>
-                            <p class="price">$179</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product6.jpg">
-                            <p class="brand">The North Face</p>
-                            <p class="product-name">Sub-zero Sleeping Bag</p>
-                            <p class="price">$179</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product7.jpg">
-                            <p class="brand">The North Face</p>
-                            <p class="product-name">Sub-zero Sleeping Bag</p>
-                            <p class="price">$179</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product10.jpg">
-                            <p class="brand">The North Face</p>
-                            <p class="product-name">Sub-zero Sleeping Bag</p>
-                            <p class="price">$179</p>
-                        </div><!--product-->
-                    </div><!--trending-populist-->
-                    <div class="featured-product">
-                        <div class="product">
-                            <img src="images/product9.jpg">
-                            <p class="brand">The North Face</p>
-                            <p class="product-name">Sub-zero Sleeping Bag</p>
-                            <p class="price">$179</p>
-                        </div><!--product-->
+        <div class="col-xs-12 col-md-10 col-md-offset-1" id="container">
+            <div class="carousel-row row col-xs-12 col-md-10 col-md-offset-1">
+                <div class="col-xs-12" id="list-category-row">
+                    <div class="col-xs-12 col-sm-4">
+                        <p class="heading first-row">Your lists</p>
                     </div>
-                </div><!--carousel-->
-            </div><!--carousel row-->
+                    <div class="col-xs-12 col-sm-8 list-search-buttons">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <div id="dropdown-sort">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="sort-by-dropdown">
+                                    <span class="caret" id="select-top-caret"></span>
+                                    <p>Sort</p>
+                                </button>
+                                <ul class="dropdown-menu sort-by-ul" id="select-top-drowpdown-ul">
+                                    <li><a href="#">Most recent</a></li>
+                                    <li><a href="#">A-Z</a></li>
+                                    <li><a href="#">Z-A</a></li>
+                                    <li><a href="#">Upcoming</a></li>
+                                </ul>
+                        </div><!--select all-->
+                    </div>
+                </div>
+
+                <div class="col-xs-10 col-xs-offset-1" id="thumbnail-preview-frame">
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Camping</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Tent</li>
+                                    <li>Sleeping bag</li>
+                                    <li>Tarp</li>
+                                    <li>Lighter</li>
+                                    <li>Bug spray</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>                    
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Overnight</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Poles</li>
+                                    <li>Boots</li>
+                                    <li>Binoculars</li>
+                                    <li>Water</li>
+                                    <li>Camera</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                         
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Prescriptions</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Lorem</li>
+                                    <li>Ipsum</li>
+                                    <li>Sit</li>
+                                    <li>Dolor</li>
+                                    <li>Amet</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Burning Man</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Lorem</li>
+                                    <li>Ipsum</li>
+                                    <li>Sit</li>
+                                    <li>Dolor</li>
+                                    <li>Amet</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">First Baby</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Lorem</li>
+                                    <li>Ipsum</li>
+                                    <li>Sit</li>
+                                    <li>Dolor</li>
+                                    <li>Amet</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Boston Marathon</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Lorem</li>
+                                    <li>Ipsum</li>
+                                    <li>Sit</li>
+                                    <li>Dolor</li>
+                                    <li>Amet</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Tough Mudder</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Lorem</li>
+                                    <li>Ipsum</li>
+                                    <li>Sit</li>
+                                    <li>Dolor</li>
+                                    <li>Amet</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Dinner Party</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Lorem</li>
+                                    <li>Ipsum</li>
+                                    <li>Sit</li>
+                                    <li>Dolor</li>
+                                    <li>Amet</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                    <a href="#">
+                        <div class="trending-populist" id="list-thumbnail">
+                            <div class="featured-list-header col-xs-12">
+                                <p class="list-title">Rock Climbing</p>
+                            </div><!--featured list header-->
+                            <div class="col-xs-12 trending-recent-lists">
+                                <ol class="trending-populist-item">
+                                    <li>Lorem</li>
+                                    <li>Ipsum</li>
+                                    <li>Sit</li>
+                                    <li>Dolor</li>
+                                    <li>Amet</li>
+                                </ol>
+                            </div>
+                            <div class="col-xs-12" id="contributors">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                      
+                            </div>
+                        </div><!--trending-populist-->
+                    </a>
+                </div><!--thumbnail-preview-frame-->
+            </div><!--carousel-->
+
+
+            
+            
 
 
 
@@ -194,14 +289,6 @@
                     </div><!--home-->
                 </a>
             </div><!--nav footer-->
-        </div><!--frame-->
-
-
-
-    </div><!--container fluid-->
-    <div id="home-button" class="col-xs-2 col-xs-offset-5"></div>
-</div><!--iphone-->
-
 
 <!--jquery and jquery ui-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
